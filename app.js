@@ -5,7 +5,7 @@ let tentativas = 1;
 
 function exibirMensagemInicial(){
     exibirTextoNaTela("h1", "Jogo do número secreto");
-    exibirTextoNaTela("p", "Escolha um número de 0 a 10");
+    exibirTextoNaTela("p", "Escolha um número de 0 a 50");
 }
 
 function exibirTextoNaTela(tag, texto) {
