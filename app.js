@@ -1,11 +1,11 @@
 let listaDeNumerosSorteados = [];
-let numeroLimite = 10;
+let numeroLimite = 20;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 function exibirMensagemInicial(){
     exibirTextoNaTela("h1", "Jogo do número secreto");
-    exibirTextoNaTela("p", "Escolha um número de 0 a 10");
+    exibirTextoNaTela("p", `Escolha um número de 0 a ${numeroLimite}`);
 }
 
 function exibirTextoNaTela(tag, texto) {
@@ -18,6 +18,16 @@ exibirMensagemInicial();
 
 function verificarChute() {
     let chute = document.querySelector("input").value;
+
+    if (chute == ""){
+        alert("Insira um número");
+        return;
+    }
+
+    if (chute > numeroLimite){
+        alert(`Escolha um número de 0 a ${numeroLimite}`);
+        return;
+    }
     
     if (chute == numeroSecreto){
         exibirTextoNaTela("h1", "Você acertou!");
@@ -27,11 +37,17 @@ function verificarChute() {
 
         document.getElementById("reiniciar").removeAttribute("disabled");
     } else {
-        if (chute > numeroSecreto){
-            exibirTextoNaTela("p", "O número secreto é menor");
-        } else {
-            exibirTextoNaTela("p", "O número secreto é maior");
-        }
+
+        exibirTextoNaTela("p", "Verificando...");
+
+        setTimeout(function(){
+            if (chute > numeroSecreto){
+                exibirTextoNaTela("p", "O número secreto é menor");
+            } else {
+                exibirTextoNaTela("p", "O número secreto é maior");
+            }
+        }, 1000);
+
         tentativas++;
         limparCampo();
     }
