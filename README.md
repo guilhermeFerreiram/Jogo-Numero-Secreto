@@ -8,15 +8,21 @@
 
 <h2 align="center">🗂 Sumário</h2>
 <p align="center">
-  <a href="#descricao">Descrição do projeto</a> &bull; 
+  <a href="#descricao">Descrição do projeto</a> &bull;
+  <a href="#tecnicas">Técnicas utilizadas</a> &bull;
   <a href="#tecnologias">Tecnologias</a> &bull; 
   <a href="#autor">Autor</a> &bull; 
   <a href="#licenca">Licença</a>
 </p>
 
 <h2 align="center" id="descricao">🗒 Descrição do projeto</h2>
-<p align="center">Este código JavaScript implementa um jogo simples chamado "Jogo do número secreto". O usuário deve escolher um número de 0 a um limite específico. O código exibe mensagens na tela, orientando o jogador a fazer seus palpites. Após cada tentativa, o código fornece pistas sobre se o número secreto é maior ou menor. Se o jogador acertar, uma mensagem de vitória é exibida, indicando o número de tentativas. O jogo possui uma funcionalidade de reinício que permite ao jogador jogar novamente. O código utiliza manipulação do DOM, geração de números aleatórios, controle de fluxo e temporização para criar a lógica do jogo.</p>
+<p align="center">Este código JavaScript implementa um jogo simples chamado "Jogo do número secreto". O usuário deve escolher um número de 0 a um limite específico. O código exibe mensagens na tela, orientando o jogador a fazer seus palpites. Após cada tentativa, o código fornece pistas sobre se o número secreto é maior ou menor. Se o jogador acertar, uma mensagem de vitória é exibida, indicando o número de tentativas. O jogo possui uma funcionalidade de reinício que permite ao jogador jogar novamente.</p>
 <blockquote> Projeto Concluído :heavy_check_mark:</blockquote>
+
+<h2 align="center" id="tecnicas">👨‍💻 Técnicas utilizadas</h2>
+<p align="center">
+Manipulação do DOM &bull; Geração de números aleatórios &bull; Controle de fluxo &bull; Temporização
+</p>
 
 <h2 align="center" id="tecnologias">🖱 Tecnologias</h2>
 <p align="center"><img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E"/> <img src="https://img.shields.io/badge/HTML5-323330?logo=html5"/> <img src="https://img.shields.io/badge/CSS3-323330?logo=css3"/></p>
